@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.date {
+  color: #888;
+}
+
+.nova-venda h2,
+.vendas-realizadas h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.form-venda {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.form-venda input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-venda button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-between;
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Estilo inicial */
+.ux {
+  color: #8d8d8d; /* cinza claro enquanto o valor for vazio */
+  border-radius: 8px;
+}
+
+/* Muda a cor para preto quando o usuário seleciona um valor */
+.ux:valid {
+  color: #000;
+}
+
+/* Garante que TODAS as opções visíveis estejam em preto */
+.ux option {
+  color: #000;
+}
+
+/* Mas o placeholder (desabilitado) continua cinza */
+.ux option[disabled] {
+  color: #8d8d8d;
+}
+
+
